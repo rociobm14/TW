@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body{
+    height: 100%;
+}
+.logo-texto{
+    justify-content: center;
+    display: flex;
+    background-color: indianred;
+}
+.logo-texto h1{
+    font-family: 'Indie Flower', cursive;
+    font-size: 70px;
+    color: yellow;
+}
+
+.logo-texto img{
+    width: 200px;
+    height: 180px;
+}
+
+header h2{
+    margin-top: 0;
+    margin-bottom:0;
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+    font-size: medium;
+    padding: 5px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul{
+    margin:0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    border-bottom: indianred solid 2px;
+}
+
+nav ul li{
+    margin-right: 50px;
+}
+
+li:hover{
+    background-color: indianred;
+}
+
+li button{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+.active {
+  background-color: indianred;
+  padding-bottom: 2px;
+}
+
+aside h3 {
+    background-color: blue;
+    color: white; 
+    padding: 10px;
+}
+
+.contenedor {
+    display: flex;
+    min-height: 50vh; /* Establece el alto mínimo del contenedor al alto total de la ventana */
+  }
+  
+  .bienvenida{
+    background-color: rgb(161, 211, 231);
+    padding: 5px;
+  }
+
+  .bienvenida h3{
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .bienvenida p{
+    font-size: x-large;
+    
+  }
+  
+  main {
+    flex-grow: 1; /* Permite que el elemento principal (main) crezca y ocupe todo el espacio disponible */
+    padding: 20px; /* Agrega un espacio de relleno para evitar que el contenido se ajuste al borde */
+  }
+  
+  aside {
+    width: 300px;
+    background-color: moccasin;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 10px;
+  }
+  
+  .incidencias label {
+    margin-right: 10px;
+  }
+
+  input[type='submit']{
+    background-color: coral;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type='submit']:hover{
+    background-color: indianred;
+  }
+
+  .boton-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .botones-editar-logout{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .boton-editar{
+    margin-right: 10px;
+  }
+
+  .rol{
+    color: blue;
+    font-size: small;
+    margin:0;
+  }
+
+  .foto-login{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  .listado{
+    background-color: rgb(161, 211, 231);
+    padding:20px;
+    margin-top: -10px;
+  }
+
+  .incidencias{
+    background-color: moccasin;
+    padding: 10px;
+  }
+
+  
+  .ordenar-por{
+    display: flex;
+    flex-direction: column;
+    margin-top: -25px;
+    margin-bottom: 10px;
+  }
+
+  .incidencias-que-contengan{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .incidencias h5{
+    margin-bottom: 3px;
+  }
+
+  .opciones-estado{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+
+  .opciones-incidencias-por-pagina{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .boton-aplicar-criterios{
+    text-align: center;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: indianred;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .autores {
+    display: flex;
+    flex-direction: column; /* Cambio para mostrar los nombres uno debajo del otro */
+    text-align: left;
+    padding-bottom: 10px;
+  }
+
+  .autores a:hover{
+    background-color: moccasin;
+  }
+  
+  .asignatura {
+    text-align: right;
+  }
+
+  .formulario-editar label{
+    display: flex;
+    flex-direction: row;
+    background-color: moccasin;
+    padding: 8px;
+    padding-left: 30px;
+  }
+
+  .formulario-editar .clave input{
+    margin-right: 5px;
+  }
+
+  .formulario-editar .foto label{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .error-formulario {
+    font-size: medium;
+    color: red;
+    background-color: moccasin;
+    margin: 0;
+    padding: 15px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.confirmacion-datos{
+  font-size: x-large;
+  background-color: lightgreen;
+}
+
+.datos-cada-usuario, .datos-cada-incidencia{
+  background-color: moccasin;
+  padding: 10px;
+  flex: 1; /* Permitir que el div ocupe el espacio restante */
+}
+
+.datos-cada-usuario li:hover, .datos-cada-incidencia li:hover{
+  background-color: moccasin;
+}
+
+.datos-cada-usuario li, .datos-cada-incidencia li{
+  list-style-type: none;
+  padding-left: 0;
+  
+}
+
+.datos-y-fotos-cada-usuario, .datos-y-fotos-cada-incidencia{
+  background-color: moccasin;
+  border: 3px solid indianred;
+  display: flex;
+  align-items: center;
+}
+
+.foto-cada-usuario{
+  flex: 0 0 auto; /* Establecer el tamaño automático sin crecimiento ni encogimiento */
+  margin-right: 5px; /* Agregar un margen derecho para separar los elementos */
+  padding-left: 20px;
+}
+
+.botones-editar-y-eliminar-cada-usuario{
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.botones-editar-y-eliminar-cada-usuario div:first-child {
+  margin-bottom: 20px; /* Agregar separación entre los elementos */
+}
+
+.boton-editar-perfil, .boton-borrar-perfil{
+  background-color: coral;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.boton-editar-perfil:hover, .boton-borrar-perfil:hover{
+  background-color: indianred;
+}
+
+.accion-a-realizar{
+  background-color: moccasin;
+  padding: 10px;
+}
+
+.accion-a-realizar p{
+  font-size: large;
+}
+
+.accion-a-realizar ul li{
+  list-style-type: none;
+  font-size: large;
+}
+
+.contenido-bbdd{
+  background-color: moccasin;
+  padding: 15px;
+}
+
+.contenido-bbdd a:hover{
+  background-color: indianred;
+}
+
+.formulario-incidencia {
+  background-color: moccasin;
+  padding: 20px;
+}
+
+.formulario-incidencia label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.formulario-incidencia input[type="text"],
+.formulario-incidencia textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formulario-incidencia textarea {
+  resize: vertical;
+}
+
+.boton-crear-incidencia {
+  margin-top: 20px;
+}
+
+.formulario-incidencia input[type="text"]{
+  width: 50%;
+}
+
+.opciones-estado-incidencia{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.formulario-editar-incidencia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario-editar-incidencia form {
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.imagenes-incidencia{
+  display: flex;
+  flex-direction: column;
+}
+
+.cada-imagen-incidencia{
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+.titulo-incidencia{
+  background-color: indianred;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.resto-datos-incidencia {
+  background-color: rgb(161, 211, 231);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  
+}
+
+.resto-datos-incidencia ul {
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.resto-datos-incidencia img {
+  display: block;
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.descripcion-incidencia{
+  margin-top: 20px;
+}
+
+.botones-incidencia{
+  background-color: coral;
+  border: 1px solid black;
+  padding: 5px;
+  width: 10%;
+}
+
+.botones-incidencia:hover{
+  background-color: indianred;
+}
+
+.todos-botones-incidencia{
+  margin-top: -20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.comentario-form {
+  width: 500px;
+  margin: 20px auto;
+}
+
+.comentario-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.comentario-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.enviar-comentario{
+  padding: 20px;
+  background-color: moccasin;
+}
+
+.boton-enviar-comentario, .boton-confirmar-comentario{
+  text-align: center;
+}
+
+.comentario {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.comentario .fecha {
+  font-weight: bold;
+  color: #333;
+}
+
+.comentario .nombre {
+  font-weight: bold;
+  color: #555;
+}
+
+.comentario .contenido {
+  margin-top: 5px;
+  color: #777;
+}
+
+.comentario a{
+  background-color:rgb(161, 211, 231);
+  border: 1px solid black;
+  padding: 0.1px;
+  width: 5%;
+  margin: 5px;
+}
+
+.fondo-estadisticas{
+  background-color:coral;
+  padding: 10px;
+  margin-top: -20px;
+}
+
+.log-entry {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: moccasin;
+}
+
+.log-entry .fecha {
+  font-weight: bold;
+  color: #333;
+}
+
+.log-entry .accion {
+  color: red;
+}
+
